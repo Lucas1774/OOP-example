@@ -11,8 +11,8 @@ public class clinica
 {
     final static LocalDate CURRENTDATE = LocalDate.now();
     final static Admin  GOD = new Admin ("admin" , "admin");
+    static Scanner inp = new Scanner(System.in);
     public static void main(String[] args){
-        Scanner inp = new Scanner(System.in);
         PatientList patientlist = new PatientList();
         LabTechList labtechlist = new LabTechList();
         NurseList nurselist = new NurseList();
@@ -24,8 +24,8 @@ public class clinica
         Nurse nurse, nurse1, nurse2;
         LabTech labtech, labtech1, labtech2;
         Patient patient1, patient2;
-        String username1, username2, password1, password2;
-        int age1, age2, day1, month1, year1;
+        String username1, password1;
+        int day1, month1, year1;
         LocalDate date1;
         Fast fast1;
         Classic classic1;
@@ -814,7 +814,6 @@ public class clinica
     }
     
     static Patient askforPatient(){
-        Scanner inp = new Scanner(System.in);
         Patient patient1;
         String username1;
         String password1;
@@ -831,7 +830,6 @@ public class clinica
     }
     
     static Nurse askforNurse(){
-        Scanner inp = new Scanner(System.in);
         Nurse nurse1;
         String username1;
         String password1;
@@ -844,7 +842,6 @@ public class clinica
     }
     
     static LabTech askforLabTech(){
-        Scanner inp = new Scanner(System.in);
         LabTech labtech1;
         String username1;
         String password1;

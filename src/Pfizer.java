@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Pfizer extends Vaccine
 {
     private LocalDate dateofsecond;
+    private Scanner inp = new Scanner(System.in);
     public Pfizer(Patient patient, LocalDate date)
     {
         super(patient, date);
@@ -22,7 +23,6 @@ public class Pfizer extends Vaccine
     }
     
     public void setDateofSecond(){
-        Scanner inp = new Scanner(System.in);
         boolean success = false;
         int day1, month1, year1;
         LocalDate date1;
