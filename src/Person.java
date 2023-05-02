@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Abstract class Person - write a description of the class here
  *
